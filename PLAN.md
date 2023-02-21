@@ -23,6 +23,9 @@
 - Classify the shoes so that you can get the basic shoe, and each shoes eigenvalue
 
 [Algo Description](https://www.youtube.com/watch?v=61NuFlK5VdU)
+[Possible walkthrough](https://www.youtube.com/watch?v=XwTW_YA3HG0)
+[Intro matlab code](https://www.mathworks.com/matlabcentral/fileexchange/45915-eigenfaces-algorithm)
+[Colin's beautiful presentation](https://docs.google.com/presentation/d/1XdNUbU__vI7NluMa7jviPBVZLXUZ0i-W5zX_3rgT9ZQ/edit#slide=id.g129d57b8a32_0_11)
 
 ## Step 4 - Build the input system
 
