@@ -11,10 +11,7 @@ X = trainingFaces-avgFace*ones(1,size(trainingFaces,2));
 [U,S,V] = svd(X,'econ');
 
 % Some background on SVD
-% U is now every single face just like X, but simplified,
-% They are our eigenfaces, able to be added on
-% Every column in X, every input face, is a linear comb of these
-
+% U is now every single face
 
 % plot
 figure(1), axes('position',[0  0  1  1]), axis off

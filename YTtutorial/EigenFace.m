@@ -68,3 +68,5 @@ end
 
 figure(1), axes('position',[0  0  1  1]), axis off
 imagesc(one_person), colormap gray
+
+%% 
