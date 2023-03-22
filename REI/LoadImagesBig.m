@@ -61,7 +61,7 @@ function [IMAGE_DIM, IMAGE_SIZE, num_shoes, LeftShoes, RightShoes, Lookup] = Loa
     IMAGE_SIZE = IMAGE_DIM * IMAGE_DIM;
 
     % Left
-    files = dir('Left/*/*');
+    files = dir('Left/*/*.jpg');
     num_shoes = numel(files);
 
     % lookup for both left and right shoes
@@ -70,8 +70,9 @@ function [IMAGE_DIM, IMAGE_SIZE, num_shoes, LeftShoes, RightShoes, Lookup] = Loa
     LeftShoes = zeros(IMAGE_SIZE, num_shoes);
 
     left_folders = dir('Left/*');
+    left_folders = left_folders(3:end);
 
-    for i = 3:numel(left_folders)
+    for i = 1:numel(left_folders)
         left_files = dir("Left/" + left_folders(i).name + "/*.jpg");
         num_this_shoe = numel(left_files); % Should be 4
 
@@ -112,14 +113,12 @@ function [IMAGE_DIM, IMAGE_SIZE, num_shoes, LeftShoes, RightShoes, Lookup] = Loa
 
     % Right
 
-    files = dir('Right/*/*');
-    num_shoes = numel(files);
-
     RightShoes = zeros(IMAGE_SIZE, num_shoes);
 
     right_folders = dir('Right/*');
+    right_folders = right_folders(3:end);
 
-    for i = 3:numel(right_folders)
+    for i = 1:numel(right_folders)
         right_files = dir("Right/" + right_folders(i).name + "/*.jpg");
         num_this_shoe = numel(right_files); % Should be 4
 
@@ -158,4 +157,7 @@ function [IMAGE_DIM, IMAGE_SIZE, num_shoes, LeftShoes, RightShoes, Lookup] = Loa
 
     end
 
+    clear i j ans left_folders right_folders files
+
 end
+
