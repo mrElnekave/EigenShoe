@@ -32,9 +32,7 @@ IMAGE_SIZE = IMAGE_DIM * IMAGE_DIM;
 
 %% Load data from folder using Train directory
 
-
-
-files = dir('Train/*.jpg');
+files = dir('TrainOrig/*.jpg');
 num_shoes = numel(files);
 
 Shoes = zeros(IMAGE_SIZE, num_shoes);
@@ -49,12 +47,11 @@ for i = 1:num_shoes
 
     imageArray = im2gray(imageArray);
     imageArray = imresize(imageArray, [IMAGE_DIM, IMAGE_DIM]);
-    Shoes(:, i) = reshape(double( im2gray(imageArray) ) , IMAGE_SIZE, 1) ;
+    Shoes(:, i) = reshape(double(im2gray(imageArray)), IMAGE_SIZE, 1);
 
     pause(.2);
 end
+
 close
 
 clear filename files fullFileName i imageArray
-
-
