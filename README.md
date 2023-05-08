@@ -18,8 +18,8 @@ I first made a matlab livescript file on how to perform SVD and how it works. If
 
 # Uses of SVD
 
-Find all of them for my face using Yale's face database [here](./YTtutorial/reconstruct_my_face.m).
-And my project on [shoes](./REI/EigenShoeBigData.mlx).
+**Find all of them for my face using Yale's face database [here](./YTtutorial/reconstruct_my_face.m).
+And my project on [shoes](./REI/EigenShoeBigData.mlx).**
 
 ## Shoe Reconstruction from U Matrix
 
