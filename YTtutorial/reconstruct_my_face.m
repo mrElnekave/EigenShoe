@@ -11,7 +11,7 @@ X = trainingFaces-avgFace*ones(1,size(trainingFaces,2));
 [U,S,V] = svd(X,'econ');
 
 %%
-norm(X - U * S * V')
+disp("This is how close we are to the actual matrix " + num2str(norm(X - U * S * V')))
 
 % Some background on SVD
 % U is now every single face just like X, but simplified,
@@ -20,12 +20,12 @@ norm(X - U * S * V')
 
 
 %% plot
-figure(1), axes('position',[0  0  1  1]), axis off
+figure(), axes('position',[0  0  1  1]), axis off
 imagesc(reshape(avgFace,n,m)) % Plot avg face
-title("avg face"), colormap gray;;
+title("avg face"), colormap gray;
 
-figure(2), axes('position',[0  0  1  1]), axis off
-title("first eigenface"), colormap gray;;
+figure(), axes('position',[0  0  1  1]), axis off
+title("first eigenface"), colormap gray;
 imagesc(reshape(U(:,1),n,m))  % Plot first eigenface
 
 %% Get r values
@@ -55,12 +55,13 @@ imagesc(reshape(testFace,n,m))
 
 testFaceMS = testFace - avgFace;
 count = 1;
-for r=[25 50 100 200 400 800 1600] 
+for r=[25 50 100 200 400 1600] 
     reconFace = avgFace + (U(:,1:r)*(U(:,1:r)'*testFaceMS));
     imagesc(reshape(reconFace,n,m))
     figure(count), axes('position',[0  0  1  1]), axis off
-    title(['r=',num2str(r, "%d")])
+    title(['r=',num2str(r, "%d")], 'FontSize', 14)
     count = count + 1;
+    drawnow;
 end
 
 %% now try mine!
@@ -69,8 +70,11 @@ BasicFace = imresize(BasicFace, [n, m]);
 testFace=reshape(double( im2gray(BasicFace) ) , n*m, 1) ;
 
 % testFace = faces(:,1+sum(nfaces(1:36))); % First face of person 37
+figure()
 imagesc(reshape(testFace,n,m))
+pause(2)
 
+figure()
 testFaceMS = testFace - avgFace;
 count = 1;
 % for r=[25 50 100 200 400 800 1600] 

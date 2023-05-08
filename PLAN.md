@@ -2,7 +2,7 @@
 
 > Create a climbing shoe differentiator
 >
-> Input: Image of a climbing shoe is a specific format
+> Input: Image of a climbing shoe in a specific format
 >
 > Output: The closest resembling shoe, and description
 
@@ -11,6 +11,10 @@
 - Gather from REI climbing shoes [store](https://www.rei.com/c/climbing-shoes)
 - visit every single link for the shoes, class: <sub><sup>(cdr-grid_12-1-0 cdr-grid--gutter-medium@xs_12-1-0 cdr-grid--gutter-medium@sm_12-1-0 cdr-grid--gutter-large@md_12-1-0 cdr-grid--gutter-large@lg_12-1-0 \_9LGEi0F4X4AsY1DIaa70j)</sup></sub>
 - At every page collect the image, as well as the title
+
+or 2
+
+- Get my own images of climbing shoes. I can control the angle, and the lighting. I can also get a lot more images. As well as create a more uniform background for a proof of concept.
 
 ## Step 2 - Cleaning
 
