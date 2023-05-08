@@ -33,8 +33,8 @@ Categorization can be achieved by checking how much of each EigenShoe is needed 
 ![right_shoe](https://user-images.githubusercontent.com/52299477/236732121-dd7978f4-4b46-47af-9714-3f96b718826e.png)
 ![left_shoe](https://user-images.githubusercontent.com/52299477/236732093-2b51ab79-14f7-42a6-a720-53635780a504.png)
 
-Compression
+## Compression
 In addition to categorizing the images, I also experimented with image compression using weights on each of the eigen shoes. I was able to store an eigenshoe image that peers could not tell the difference from the original and was just 11% the size of the original. This was accomplished by using a weighting scheme that emphasizes the most important eigenshoes and minimizes the impact of the less important ones.
 
-Conclusion
+## Conclusion
 EigenShoe is a project that demonstrates the use of Singular Value Decomposition, classification and categorization, and image compression techniques to categorize and compress different climbing shoes based on their images. This project has potential applications in fields such as fashion, product design, and data storage, and human identification.
