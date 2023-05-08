@@ -24,12 +24,16 @@ And my project on [shoes](./REI/EigenShoeBigData.mlx).**
 ## Shoe Reconstruction from U Matrix
 
 The U matrix obtained from the SVD can be used to reconstruct the original matrix. In this project, the U matrix was used to reconstruct the shoe images, and to construct never before seen shoes and faces out of our library of shoes.
+![reconstruction](https://user-images.githubusercontent.com/52299477/236732079-6227e791-309d-4376-9afe-fd2380fa93e7.png)
 
 ## Categorization
 
 Categorization can be achieved by checking how much of each EigenShoe is needed to reconstruct a shoe, if it needs more of the orange stripes, maybe its a scarpa instinct. I categorized the shoes by how much they use each Eigenvector.
 
-Image Compression
+![right_shoe](https://user-images.githubusercontent.com/52299477/236732121-dd7978f4-4b46-47af-9714-3f96b718826e.png)
+![left_shoe](https://user-images.githubusercontent.com/52299477/236732093-2b51ab79-14f7-42a6-a720-53635780a504.png)
+
+Compression
 In addition to categorizing the images, I also experimented with image compression using weights on each of the eigen shoes. I was able to store an eigenshoe image that peers could not tell the difference from the original and was just 11% the size of the original. This was accomplished by using a weighting scheme that emphasizes the most important eigenshoes and minimizes the impact of the less important ones.
 
 Conclusion
