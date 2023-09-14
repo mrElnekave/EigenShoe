@@ -24,6 +24,7 @@ And my project on [shoes](./REI/EigenShoeBigData.mlx).**
 ## Shoe Reconstruction from U Matrix
 
 The U matrix obtained from the SVD can be used to reconstruct the original matrix. In this project, the U matrix was used to reconstruct the shoe images, and to construct never before seen shoes and faces out of our library of shoes.
+
 ![reconstruction](https://user-images.githubusercontent.com/52299477/236732079-6227e791-309d-4376-9afe-fd2380fa93e7.png)
 
 ## Categorization
